@@ -26,6 +26,12 @@
                     Activity will accept Intents with the
                     action "android.intent.action.VIEW" and with an "http"
                     schemed URL -->
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:scheme="http"/>
+                <data android:host="www.google.com"/>
+            </intent-filter>
         </activity>
     </application>
 
